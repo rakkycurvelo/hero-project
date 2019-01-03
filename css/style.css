@@ -49,8 +49,9 @@ table {
 
 /* End of CSS reset tool */
 
-/* To check if you did wrong: */
+/* Start of my CSS */
 
+/* Declaring an external font, giving it a name to be used along with the site content */
 @font-face {
     font-family:'Fertigo_PRO';
     src: url('fertigo/Fertigo_PRO-webfont.woff2') format('woff2'),
@@ -59,26 +60,16 @@ table {
     font-style: normal;
 }
 
-/*home*/
-
-.homebody {
-	width: 50em;
-	height: 40em;
-	margin: 0 auto;
-	padding: 0 auto;
-	background-color: #E5E6E4;
-	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-}
+/* Styling my homepage*/
 
 .home_masthead {
 	width: 60em;
 	height: 5em;
-	margin-top: 0.5%;
-	position:relative;
+	position: static;
 }
 
 .home_masthead img {
-	width: 40em;
+	width: 35em;
 }
 
 #homecontainer {
@@ -112,17 +103,18 @@ table {
 }
 
 .navhome {
-	width: 82.5%;
+	width: 90%;
 	font-family: "Fertigo_PRO", sans-serif;
 	font-size: 1.2em;
-	padding: 0.8%;
-	margin-left: 3.5em;
+	padding: 1%; /*try to understand why this changes the entire page size */
+
 
 }
 
 .navhome ul li {
 	display: inline;
-	margin-left: 2em;
+	padding: 0.5%;
+
 }
 
 .navhome ul li a {
@@ -147,7 +139,8 @@ table {
 	text-shadow: #FC0 1em 0 0.625em;
 }
 
-/* hamburguer menu home */
+
+/* TO REACTIVATE AFTER FIND OUT HOW TO FIX IT ON MY JS CODE  hamburguer menu home
 
 .hamburger{
   background:none;
@@ -180,7 +173,7 @@ table {
 
 }
 
-/* hamburguer menu others */
+
 
 .hamburgerO{
   background:none;
@@ -211,7 +204,7 @@ table {
   cursor:pointer;
   outline:none;
 
-}
+} */
 
 /*body*/
 
@@ -348,59 +341,6 @@ header figure img {
 .clear {
 	clear: both;
 }
-
-/*footer*/
-
-.hfoot footer {
-	width: 95%;
-	height: 10%;
-	margin-right: 10%;
-	position: relative;
-	text-align: right;
-	float: right;
-}
-
-.hfoot footer ul li {
-	display: inline;
-}
-
-.hfoot footer p a {
-	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	text-align: right;
-	font-size: .9em;
-}
-
-.hfoot footer p {
-	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-	text-align: right;
-	font-size: .9em;
-}
-
-.hfoot footer a {
-	font-family: "Fertigo_PRO", sans-serif;
-	font-size: 0.7em;
-	padding: 2%;
-	margin: 0 auto;
-	color: #717370;
-	text-align: center;
-	text-decoration: none;
-}
-
-.hfoot footer a:hover {
-	color: #2C2F30;
-	text-decoration: overline;
-}
-
-.hfoot footer a:visited {
-	color: #020402;
-}
-
-.hfoot footer img {
-	position:absolute;
-	width: 2.5em;
-	margin: -2.5em 0.3125em 0.3125em 1.55em;
-}
-
 
 footer {
 	width: 95%;
@@ -719,14 +659,6 @@ label:hover {
 		width: auto;
 		padding: 0.5em;
 		margin: 0 auto;
-	}
-}
-
-@media screen and (max-width: 960px) {
-	#homebody {
-		width: auto;
-		height: auto;
-		font-size: 1em;
 	}
 }
 
@@ -1219,14 +1151,6 @@ label:hover {
 }
 
 @media screen and (max-width: 768px) {
-	#homebody {
-		width: 55em;
-		height: 35em;
-		font-size: 1em;
-	}
-}
-
-@media screen and (max-width: 768px) {
 	.home_masthead {
 		width: 45em;
 		height: auto;
@@ -1516,12 +1440,6 @@ label:hover {
 	}
 }
 
-@media screen and (max-width: 700px){
-	#homebody {
-		width: 75em;
-	}
-}
-
 @media screen and (max-width: 700px) {
 	#homecontainer {
 		width: 48rem;
@@ -1670,13 +1588,6 @@ label:hover {
 	}
 }
 
-@media screen and (max-width:500px){
-	#homebody {
-		width: auto;
-		height: auto;
-		font-size: 0.5em;
-	}
-}
 
 @media screen and (max-width:500px) {
 	.home_masthead {
@@ -1870,14 +1781,6 @@ label:hover {
 	#homecontainer {
 		width: 650px;
 		padding: 0 auto;
-	}
-}
-
-@media screen and (max-width:320px){
-	#homebody {
-		width: auto;
-		height: auto;
-		font-size: 0.5em;
 	}
 }
 

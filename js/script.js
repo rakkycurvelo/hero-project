@@ -8,7 +8,9 @@ $(document).ready(function(){
 	})
 });
 
-$( document ).ready(function() {
+/* commenting to remove the hamburger menu while I don't have a specific plan for it to work 
+
+ $( document ).ready(function() {
 
 $( ".cross" ).hide();
 $( ".navhome" ).hide();
@@ -48,6 +50,4 @@ $( ".hamburgerO" ).show();
 });
 
 });
-
-
-
+*/
